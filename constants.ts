@@ -7,8 +7,8 @@ export const PORTFOLIO_NODES: NodeData[] = [
     type: 'hero',
     position: { x: 0, y: 0 },
     content: {
-      name: "Alex Chen",
-      tagline: "Building the bridge between Systems & Intelligence.",
+      name: "Gisoo Jafari",
+      tagline: "Engineering Full-stack AI applications and Intelligent Robots!",
       subTagline: "Software Engineer • LLM Researcher • 2025"
     }
   },
@@ -19,16 +19,14 @@ export const PORTFOLIO_NODES: NodeData[] = [
     position: { x: 500, y: -400 },
     content: [
       {
-        title: "Efficient Attention Mechanisms for Long Contexts",
-        venue: "NeurIPS 2024 (Workshop)",
-        year: "2024",
-        abstract: "Proposing a new sparse attention pattern that reduces memory complexity to O(n log n) with minimal degradation on recall tasks."
+        title: "Furhat as a Simulated Patient: Exploring LLM-Driven Human-Robot Interaction in Optometry Communication Training",
+        venue: "HRI",
+        year: "2026",
       },
       {
-        title: "Quantizing Vision Transformers without Retraining",
-        venue: "CVPR 2024 (Under Review)",
-        year: "2024",
-        abstract: "A post-training quantization method utilizing outlier suppression for ViT architectures."
+        title: "Evaluating the implementation and perception of Furhat Robot in Developing Interpersonal Skills",
+        venue: "HRI",
+        year: "2026",
       }
     ]
   },
@@ -65,17 +63,23 @@ export const PORTFOLIO_NODES: NodeData[] = [
     position: { x: 600, y: 300 },
     content: [
       {
-        role: "Research Intern",
-        company: "DeepMind (Simulated)",
-        duration: "Summer 2024",
-        description: "Investigated scaling laws for mixture-of-experts models. Implemented custom JAX kernels."
+        role: "Graduate Research Intern",
+        company: "Social and Intelligent Robotics Lab, University of Waterloo",
+        duration: "Jan 2025-Present",
+        description: "Engineering an LLM-powered Furhat Robot for automated optometry communication training by integrating GPT APIs in Kotlin, implementing RAG fine-tuning, and optimizing persona-driven prompt engineering. "
       },
       {
-        role: "Senior Frontend Engineer",
-        company: "Vercel (Simulated)",
-        duration: "2021 - 2023",
-        description: "Led the migration to Next.js 13 App Router for the core dashboard. Improved LCP by 40%."
-      }
+        role: "Full-stack Engineer",
+        company: "Criteo",
+        duration: "Summer 2025",
+        description: "Developed a full-stack, internal diagnostic tool with C#, .NET, Kafka, and Angular, which increased developer efficiency by 40% by reducing debugging time for over 20 engineers."
+      },
+      {
+        role: "Software Engineer Backend Intern",
+        company: "Vosyn",
+        duration: "Winter 2025",
+        description: "Engineered and deployed scalable AI translation using RESTful APIs, Python, FastAI and PostgreSQL for multilingual voice/text services, driving a 15% increase in third-party integrations."
+      }         
     ]
   },
   {
@@ -84,8 +88,8 @@ export const PORTFOLIO_NODES: NodeData[] = [
     type: 'about',
     position: { x: -550, y: -300 },
     content: {
-      bio: "I'm a Master's student fascinated by the intersection of distributed systems and artificial intelligence. When I'm not debugging CUDA kernels or centering divs, I'm likely hiking or brewing espresso.",
-      skills: ["TypeScript", "React", "Python", "PyTorch", "Rust", "Docker", "Kubernetes", "GCP/AWS"]
+      bio: "I'm a Master's student fascinated by the intersection of human-robot interaction and artificial intelligence.",
+      skills: ["Python", "PyTorch", "C#", ".NET"]
     }
   }
 ];

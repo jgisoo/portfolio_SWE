@@ -9,25 +9,25 @@ const generateLocalResponse = (userMessage: string): string => {
   // Knowledge base for responses
   const responses: { [key: string]: string[] } = {
     'project': [
-      "📊 NanoGPT-Speed: An optimized GPT-2 implementation in Rust for blazingly fast inference. Built to compress and accelerate model performance.",
-      "🔗 CodeWeaver: A VS Code extension that integrates local LLMs for intelligent code suggestions without cloud dependencies."
+      "📊 ",
+      "🔗 "
     ],
     'experience': [
-      "🏢 I worked at BigTech Corp as a Software Engineer, building scalable React and Node.js systems.",
-      "🔬 AI Lab Intern (Summer 2024): Focused on neural network quantization and model compression techniques.",
-      "🚀 StartupX Engineer (2021-2023): Developed and maintained distributed systems and microservices."
+      "🔬 Human-Robot Researcher @University of Waterloo: Focused on LLM-powered robots and its benefits for human communication.",
+      "🏢 I have held Software Engineer Internships in tech, building scalable backends with Python & C# & Node.js",
+      "🚀 Developed and maintained distributed systems and microservices, AI & ML systems."
     ],
     'research': [
-      "🧠 My research focuses on: Sparse Attention mechanisms, Model Compression, RLHF, and Multi-modal AI Agents.",
-      "📈 Currently pursuing a Master's degree in CS with specialization in efficient LLM inference."
+      "🧠 My research focuses on LLM-powered Furhat robot for optometry students communication training, building Kotlin application with OpenAI API",
+      "📈 Currently pursuing a Master's degree in Computer Engineering with specialization in LLM and robotics."
     ],
     'hobby': [
-      "🏔️ I love climbing and challenging myself on outdoor trails.",
+      "🏔️ I love playing tennis and teach in summer camps",
       "🌌 Big fan of sci-fi. I enjoy exploring futuristic concepts and their implications on technology."
     ],
     'skill': [
-      "💻 Proficient in: Python, Rust, TypeScript, React, Node.js, and various ML frameworks.",
-      "🛠️ Specialized in: LLM optimization, distributed systems, full-stack development, and cloud infrastructure."
+      "💻 Proficient in: Python, C#, .NET, ML frameworks.",
+      "🛠️ Specialized in: LLMs, full-stack development"
     ]
   };
 
@@ -40,8 +40,6 @@ const generateLocalResponse = (userMessage: string): string => {
 
   // Default responses
   const defaultResponses = [
-    "⚙️ Query received. Please specify a topic: projects, experience, research, skills, or hobbies.",
-    "🔧 System ready. Try asking about my experience, projects, or research interests.",
     "📡 Connection stable. Feel free to inquire about anything related to my work and experience."
   ];
 
@@ -53,7 +51,7 @@ export const ChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 'welcome',
-      text: "FactoryOS v9000 Online. I monitor the production lines here. Query me for details on Alex's schematics or experience.",
+      text: "Ping for any info about my projects, experience, research or skills. ",
       sender: ChatSender.BOT,
       timestamp: Date.now()
     }
