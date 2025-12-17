@@ -4,47 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neural Factory Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Chakra Petch', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-            colors: {
-              factory: {
-                dark: "#0a0a0f",
-                panel: "#13131f",
-                cyan: "#00f0ff",
-                yellow: "#facc15",
-                danger: "#ef4444"
-              }
-            },
-            backgroundImage: {
-              'grid-pattern': "linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)",
-            },
-            animation: {
-              'spin-slow': 'spin 8s linear infinite',
-              'flow': 'flow 1s linear infinite',
-              'shimmer': 'shimmer 2s infinite',
-            },
-            keyframes: {
-              flow: {
-                '0%': { strokeDashoffset: '20' },
-                '100%': { strokeDashoffset: '0' },
-              },
-              shimmer: {
-                '0%': { transform: 'translateX(-100%)' },
-                '100%': { transform: 'translateX(100%)' },
-              }
-            }
-          },
-        },
-      }
-    </script>
     <style>
       body {
         background-color: #050505;

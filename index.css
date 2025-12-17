@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .hazard-stripes {
+    background: repeating-linear-gradient(
+      45deg,
+      #facc15,
+      #facc15 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  }
+}
