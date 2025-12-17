@@ -69,7 +69,7 @@ function App() {
       {/* Top Left Branding */}
       <div className="fixed top-6 left-6 z-40 pointer-events-none border-l-2 border-factory-cyan pl-4">
         <h2 className="text-xl font-bold tracking-tight uppercase">Gisoo Jafari</h2>
-        <p className="text-xs text-white/50 font-mono"> <span className="text-factory-cyan">OPERATIONAL</span></p>
+        <p className="text-xs text-white/50 font-mono"> <span className="text-factory-cyan">AI Researcher/ Software Engineer</span></p>
       </div>
     </div>
   );
