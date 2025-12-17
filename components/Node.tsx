@@ -207,7 +207,7 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
 
                 <div className="space-y-4">
                      <p className="text-gray-300 leading-relaxed text-sm p-4 bg-blue-500/5 border border-blue-500/10 rounded-lg">
-                        <span className="text-blue-400 font-mono block mb-2 text-xs opacity-70">>> BIO_SUMMARY.TXT</span>
+                        <span className="text-blue-400 font-mono block mb-2 text-xs opacity-70">{">>"} BIO_SUMMARY.TXT</span>
                         {data.content.bio}
                      </p>
 

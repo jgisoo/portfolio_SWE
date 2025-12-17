@@ -2,10 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { X, Send, Loader2, Bot, Terminal } from 'lucide-react';
 import { ChatMessage, ChatSender } from '../types';
 
-import React, { useState, useRef, useEffect } from 'react';
-import { X, Send, Loader2, Bot, Terminal } from 'lucide-react';
-import { ChatMessage, ChatSender } from '../types';
-
 // Local response generator - no API required
 const generateLocalResponse = (userMessage: string): string => {
   const lowerMessage = userMessage.toLowerCase();
@@ -142,7 +138,7 @@ export const ChatWidget: React.FC = () => {
                       : 'bg-white/5 text-gray-300 border-white/10 rounded-bl-none'
                   }`}
                 >
-                  {msg.sender === ChatSender.BOT && <span className="text-[10px] text-factory-cyan/50 block mb-1">>> SYSTEM_MSG</span>}
+                  {msg.sender === ChatSender.BOT && <span className="text-[10px] text-factory-cyan/50 block mb-1"> SYSTEM_MSG</span>}
                   {msg.text}
                 </div>
               </div>

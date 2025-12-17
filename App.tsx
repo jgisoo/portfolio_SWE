@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Canvas } from './components/Canvas';
-import { ChatWidget } from './components/ChatWidget';
-import { Minimap } from './components/Minimap';
+import { Canvas } from './components/Canvas.tsx';
+import { ChatWidget } from './components/ChatWidget.tsx';
+import { Minimap } from './components/Minimap.tsx';
 import { PORTFOLIO_NODES } from './constants';
 import { Position } from './types';
 import { Settings } from 'lucide-react';
