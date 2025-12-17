@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neural Factory Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Chakra Petch', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              factory: {
+                dark: "#0a0a0f",
+                panel: "#13131f",
+                cyan: "#00f0ff",
+                yellow: "#facc15",
+                danger: "#ef4444"
+              }
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px)",
+            },
+            animation: {
+              'spin-slow': 'spin 8s linear infinite',
+              'flow': 'flow 1s linear infinite',
+              'shimmer': 'shimmer 2s infinite',
+            },
+            keyframes: {
+              flow: {
+                '0%': { strokeDashoffset: '20' },
+                '100%': { strokeDashoffset: '0' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #e5e5e5;
+        overflow: hidden;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .glass-panel {
+        background: rgba(19, 19, 31, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+      }
+      .hazard-stripes {
+        background: repeating-linear-gradient(
+          45deg,
+          #facc15,
+          #facc15 10px,
+          #000000 10px,
+          #000000 20px
+        );
+      }
+      .conveyor-belt {
+        background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.1) 50%);
+        background-size: 20px 100%;
+        animation: slide 1s linear infinite;
+      }
+      @keyframes slide {
+        from { background-position: 0 0; }
+        to { background-position: 20px 0; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
