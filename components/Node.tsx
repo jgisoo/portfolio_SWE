@@ -59,8 +59,8 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
                         <FileText className="text-purple-400" size={20} />
                     </div>
                     <div>
-                        <h2 className="text-xl font-bold text-white uppercase tracking-wider">R&D Sector</h2>
-                        <div className="text-[10px] text-purple-400 font-mono">LABORATORY ACCESS GRANTED</div>
+                        <h2 className="text-xl font-bold text-white uppercase tracking-wider">Publications</h2>
+                        <div className="text-[10px] text-purple-400 font-mono">IN THE WORKS</div>
                     </div>
                 </div>
                 <div className="text-purple-500/20">
@@ -122,8 +122,8 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
                         <Wrench className="text-green-400" size={20} />
                     </div>
                     <div>
-                        <h2 className="text-xl font-bold text-white uppercase tracking-wider">Prototype Assembly</h2>
-                        <div className="text-[10px] text-green-400 font-mono">PRODUCTION LINE ACTIVE</div>
+                        <h2 className="text-xl font-bold text-white uppercase tracking-wider">Projects</h2>
+                        <div className="text-[10px] text-green-400 font-mono">PRODUCTION LINE</div>
                     </div>
                 </div>
                 <Settings className="text-green-500/20 animate-spin-slow" size={32} />
@@ -165,8 +165,8 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
                     <Briefcase className="text-orange-400" size={20} />
                 </div>
                 <div>
-                     <h2 className="text-xl font-bold text-white uppercase tracking-wider">Deployment Log</h2>
-                     <div className="text-[10px] text-orange-400 font-mono">HISTORY ARCHIVE</div>
+                     <h2 className="text-xl font-bold text-white uppercase tracking-wider">Experiences</h2>
+                     <div className="text-[10px] text-orange-400 font-mono">HISTORY</div>
                 </div>
             </div>
             
@@ -200,8 +200,8 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
                         <User className="text-blue-400" size={32} />
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold text-white">Operator Profile</h2>
-                        <div className="text-xs text-blue-400 font-mono">ID: ALEX_CHEN_001</div>
+                        <h2 className="text-2xl font-bold text-white">About Me</h2>
+                        <div className="text-xs text-blue-400 font-mono">ID: Gisoo Jafari</div>
                     </div>
                 </div>
 
