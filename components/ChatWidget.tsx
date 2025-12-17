@@ -1,7 +1,56 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { X, Send, Loader2, Bot, Terminal } from 'lucide-react';
 import { ChatMessage, ChatSender } from '../types';
-import { sendMessageToGemini } from '../services/geminiService';
+
+import React, { useState, useRef, useEffect } from 'react';
+import { X, Send, Loader2, Bot, Terminal } from 'lucide-react';
+import { ChatMessage, ChatSender } from '../types';
+
+// Local response generator - no API required
+const generateLocalResponse = (userMessage: string): string => {
+  const lowerMessage = userMessage.toLowerCase();
+  
+  // Knowledge base for responses
+  const responses: { [key: string]: string[] } = {
+    'project': [
+      "📊 NanoGPT-Speed: An optimized GPT-2 implementation in Rust for blazingly fast inference. Built to compress and accelerate model performance.",
+      "🔗 CodeWeaver: A VS Code extension that integrates local LLMs for intelligent code suggestions without cloud dependencies."
+    ],
+    'experience': [
+      "🏢 I worked at BigTech Corp as a Software Engineer, building scalable React and Node.js systems.",
+      "🔬 AI Lab Intern (Summer 2024): Focused on neural network quantization and model compression techniques.",
+      "🚀 StartupX Engineer (2021-2023): Developed and maintained distributed systems and microservices."
+    ],
+    'research': [
+      "🧠 My research focuses on: Sparse Attention mechanisms, Model Compression, RLHF, and Multi-modal AI Agents.",
+      "📈 Currently pursuing a Master's degree in CS with specialization in efficient LLM inference."
+    ],
+    'hobby': [
+      "🏔️ I love climbing and challenging myself on outdoor trails.",
+      "🌌 Big fan of sci-fi. I enjoy exploring futuristic concepts and their implications on technology."
+    ],
+    'skill': [
+      "💻 Proficient in: Python, Rust, TypeScript, React, Node.js, and various ML frameworks.",
+      "🛠️ Specialized in: LLM optimization, distributed systems, full-stack development, and cloud infrastructure."
+    ]
+  };
+
+  // Check for keyword matches
+  for (const [keyword, answerList] of Object.entries(responses)) {
+    if (lowerMessage.includes(keyword)) {
+      return answerList[Math.floor(Math.random() * answerList.length)];
+    }
+  }
+
+  // Default responses
+  const defaultResponses = [
+    "⚙️ Query received. Please specify a topic: projects, experience, research, skills, or hobbies.",
+    "🔧 System ready. Try asking about my experience, projects, or research interests.",
+    "📡 Connection stable. Feel free to inquire about anything related to my work and experience."
+  ];
+
+  return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+};
 
 export const ChatWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,12 +86,10 @@ export const ChatWidget: React.FC = () => {
     setInputText('');
     setIsTyping(true);
 
-    const history = messages.map(m => ({
-      role: m.sender === ChatSender.USER ? 'user' : 'model',
-      parts: [{ text: m.text }]
-    }));
+    // Simulate a small delay for better UX
+    await new Promise(resolve => setTimeout(resolve, 500));
     
-    const responseText = await sendMessageToGemini(history, userMsg.text);
+    const responseText = generateLocalResponse(userMsg.text);
 
     const botMsg: ChatMessage = {
       id: (Date.now() + 1).toString(),
