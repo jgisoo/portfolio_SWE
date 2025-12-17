@@ -37,10 +37,10 @@ export const PORTFOLIO_NODES: NodeData[] = [
     position: { x: -400, y: 450 },
     content: [
       {
-        title: "AgentGrid",
-        description: "A spatial canvas for multi-agent collaboration visualization.",
-        tags: ["React", "WebSockets", "Python", "LangChain"],
-        image: "https://picsum.photos/400/200?random=1"
+        title: "ML Credit fraud Detection System",
+        description: "Full-stack ML system to detect credit card fraud using anomaly detection techniques, built with Python, streaming ML pipeline with XGBoost, TabNet, and TabTransformer",
+        tags: ["TabNet", "XGBoost", "Python", "TabTransformer"],
+        // image: "https://picsum.photos/400/200?random=1"
       },
       // {
       //   title: "Rust-Tensor",
