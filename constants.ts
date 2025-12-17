@@ -42,18 +42,18 @@ export const PORTFOLIO_NODES: NodeData[] = [
         tags: ["React", "WebSockets", "Python", "LangChain"],
         image: "https://picsum.photos/400/200?random=1"
       },
-      {
-        title: "Rust-Tensor",
-        description: "A bare-metal tensor library written in Rust for educational purposes.",
-        tags: ["Rust", "CUDA", "Math"],
-        image: "https://picsum.photos/400/200?random=2"
-      },
-      {
-        title: "Semantic Search Engine",
-        description: "Vector database implementation from scratch using HNSW index.",
-        tags: ["C++", "Python", "Docker"],
-        image: "https://picsum.photos/400/200?random=3"
-      }
+      // {
+      //   title: "Rust-Tensor",
+      //   description: "A bare-metal tensor library written in Rust for educational purposes.",
+      //   tags: ["Rust", "CUDA", "Math"],
+      //   image: "https://picsum.photos/400/200?random=2"
+      // },
+      // {
+      //   title: "Semantic Search Engine",
+      //   description: "Vector database implementation from scratch using HNSW index.",
+      //   tags: ["C++", "Python", "Docker"],
+      //   image: "https://picsum.photos/400/200?random=3"
+      // }
     ]
   },
   {
