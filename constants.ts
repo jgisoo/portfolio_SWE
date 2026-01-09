@@ -72,7 +72,8 @@ export const PORTFOLIO_NODES: NodeData[] = [
         role: "Full-stack Engineer",
         company: "Criteo",
         duration: "Summer 2025",
-        description: "Developed a full-stack, internal diagnostic tool with C#, .NET, Kafka, and Angular, which increased developer efficiency by 40% by reducing debugging time for over 20 engineers."
+        description: "Developed a full-stack, internal diagnostic tool with C#, .NET, Kafka, and Angular, which increased developer efficiency by 40% by reducing debugging time for over 20 engineers.",
+        link: "https://jgisoo.github.io/AuctionDiagnosticTool/"
       },
       {
         role: "Software Engineer Backend Intern",
