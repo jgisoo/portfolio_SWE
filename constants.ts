@@ -79,7 +79,9 @@ export const PORTFOLIO_NODES: NodeData[] = [
         role: "Software Engineer Backend Intern",
         company: "Vosyn",
         duration: "Winter 2025",
-        description: "Engineered and deployed scalable AI translation using RESTful APIs, Python, FastAI and PostgreSQL for multilingual voice/text services, driving a 15% increase in third-party integrations."
+        description: "Engineered and deployed scalable AI translation using RESTful APIs, Python, FastAI and PostgreSQL for multilingual voice/text services, driving a 15% increase in third-party integrations. VosynConnect Team",
+        link: "https://vosyn.ai/vosynconnect/"
+
       }         
     ]
   },

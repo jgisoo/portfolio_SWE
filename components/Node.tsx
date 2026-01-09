@@ -175,9 +175,14 @@ export const Node: React.FC<NodeProps> = ({ data, scale }) => {
                <div className="absolute left-9 top-8 bottom-8 w-[2px] bg-white/10"></div>
                
                {data.content.map((job: any, idx: number) => (
-                 <div key={idx} className="relative pl-10">
+                 <div 
+                   key={idx} 
+                   className="relative pl-10 cursor-pointer group"
+                   onClick={() => job.link && window.open(job.link, '_blank')}
+                   style={{ cursor: job.link ? 'pointer' : 'default' }}
+                 >
                     <div className="absolute left-[-5px] top-1 w-3 h-3 bg-orange-500 border-4 border-[#13131f] rounded-full z-10"></div>
-                    <div className="flex flex-col">
+                    <div className={`flex flex-col rounded-lg transition-all ${job.link ? 'group-hover:bg-orange-500/5 p-3 -m-3' : ''}`}>
                         <span className="text-xs font-mono text-orange-400 mb-1 px-2 py-0.5 bg-orange-500/10 self-start rounded-sm border border-orange-500/20">{job.duration}</span>
                         <h3 className="text-lg font-bold text-white mt-2">{job.role}</h3>
                         <span className="text-sm text-gray-400 mb-3 font-mono">@ {job.company}</span>

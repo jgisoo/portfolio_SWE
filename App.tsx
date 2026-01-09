@@ -38,7 +38,7 @@ function App() {
                 <div className="h-full bg-factory-cyan animate-[slide_1.5s_ease-in-out_infinite]"></div>
             </div>
             <h1 className="mt-6 text-2xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-factory-cyan to-white uppercase">
-              Booting Factory OS
+              Portfolio Loading...
             </h1>
         </div>
       </div>
