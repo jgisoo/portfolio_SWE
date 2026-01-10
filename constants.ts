@@ -66,7 +66,8 @@ export const PORTFOLIO_NODES: NodeData[] = [
         role: "Graduate Research Intern",
         company: "Social and Intelligent Robotics Lab, University of Waterloo",
         duration: "Jan 2025-Present",
-        description: "Engineering an LLM-powered Furhat Robot for automated optometry communication training by integrating GPT APIs in Kotlin, implementing RAG fine-tuning, and optimizing persona-driven prompt engineering. "
+        description: "Engineering an LLM-powered Furhat Robot for automated optometry communication training by integrating GPT APIs in Kotlin, implementing RAG fine-tuning, and optimizing persona-driven prompt engineering. ",
+        link: "https://uwaterloo.ca/social-intelligent-robotics-research-lab/"
       },
       {
         role: "Full-stack Engineer",
